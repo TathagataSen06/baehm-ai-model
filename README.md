@@ -1,68 +1,60 @@
-Bio-Acoustic Ecosystem Health Monitor (BAEHM) Prototype
-Project Overview
-The Bio-Acoustic Ecosystem Health Monitor (BAEHM) is a prototype showcasing advanced AI/ML and immersive visualizations for environmental monitoring. It aims to provide actionable insights into ecosystem health by analyzing acoustic data and contextual environmental factors. This project demonstrates a proof-of-concept for an enterprise-grade solution, highlighting capabilities valuable to leading tech companies like MAANG.
+# BAEHM - Bio-Acoustic Ecosystem Health Monitor
 
-Key Features & Concepts Demonstrated
-This prototype integrates and simulates several advanced features:
+A React-based web application that simulates bio-acoustic ecosystem health monitoring using TensorFlow.js and THREE.js for visualization.
 
-Immersive 3D & Futuristic UI/UX: Interactive 3D spherical network visualization using three.js with a modern, structured aesthetic.
+## Features
 
-Audio-Reactive 3D Visualization: The 3D scene dynamically responds to simulated health scores and detected sound categories (color, size, pulsing).
+- **Audio Analysis**: Upload audio files or simulate recordings for ecosystem health analysis
+- **AI Integration**: Uses TensorFlow.js Speech Commands model for sound classification
+- **3D Visualization**: Interactive THREE.js background with audio-reactive elements
+- **Health Scoring**: Calculates ecosystem health scores based on bio-acoustic indicators
+- **Trend Analysis**: Tracks historical data and shows health trends
+- **Spectrogram Visualization**: Real-time frequency band visualization
 
-Simulated Real-time Audio Streaming & Edge Processing: Represents data ingestion from IoT sensors, implying on-device processing and secure data pipelines.
+## Setup
 
-Real TensorFlow.js Model for Inference: Loads and uses a pre-trained TF.js Speech Commands model for sound classification, influencing simulated bioacoustic analysis.
+1. **Install Dependencies**:
+   ```bash
+   npm install
+   ```
 
-On-Screen Subtitles & Feedback Animations: Provides immediate visual feedback for detected sound categories.
+2. **Start Development Server**:
+   ```bash
+   npm start
+   ```
 
-Multi-Modal Data Representation (Simulated): Includes simulated environmental factors (temp, humidity, light, location) in analysis results, influencing health scores.
+3. **Open Browser**:
+   Navigate to `http://localhost:3000`
 
-Explainable AI (XAI) (Simulated): Generates simulated natural language explanations for AI decisions.
+## Usage
 
-Predictive Analytics & Anomaly Detection (Simulated): Displays simulated future trends and triggers alerts for high anthropogenic noise.
+1. **Upload Audio**: Click "Upload Audio File" to select an audio file
+2. **Simulate Recording**: Click "Start Recording" to simulate a live recording
+3. **Add Notes**: Optionally add environmental notes
+4. **Analyze**: Click "Start Analysis" to process the audio
+5. **View Results**: See the ecosystem health score and detailed breakdown
 
-Technical Stack
-Frontend: React.js
+## Technical Details
 
-3D Visualization: Three.js
+- **Frontend**: React 18 with Hooks
+- **Styling**: Tailwind CSS with custom 3D effects
+- **3D Graphics**: THREE.js for interactive background
+- **AI**: TensorFlow.js Speech Commands model
+- **Audio Processing**: Simulated spectrogram generation
 
-ML Inference: TensorFlow.js (Speech Commands)
+## Note
 
-Styling: Tailwind CSS
+This is a demonstration application. The audio analysis is simulated for educational purposes. In a real implementation, you would:
 
-Icons: Lucide React (mocked)
+- Process actual audio files
+- Use trained models for bio-acoustic classification
+- Implement real-time audio capture
+- Connect to environmental databases
 
-How to Run the Prototype
-Copy the code from this immersive artifact.
+## Dependencies
 
-Paste it into an App.js file within a standard React project.
-
-Ensure three.js, tf.min.js, speech-commands.min.js, and tailwindcss CDN scripts are included in your public/index.html.
-
-Run your project locally (e.g., npm start).
-
-Usage & Interaction
-Upload Audio File / Start Recording Live Stream: Provide audio input.
-
-Start AI Analysis: Initiate the simulated analysis.
-
-Observe Results: See dynamic 3D reactions, spectrogram updates, detected sound feedback, detailed analysis, XAI explanations, health scores, and predictive trends.
-
-Future Enhancements for Real-Life Replication (MAANG-Worthy Potential)
-To become a full enterprise solution, BAEHM would require:
-
-True IoT Integration: Real-time data from physical sensors with low-power communication and robust edge AI (TensorFlow Lite).
-
-Advanced MLOps: Comprehensive infrastructure for continuous training, deployment, and monitoring of specialized deep learning models for fine-grained species identification and behavioral analysis.
-
-Scalable Cloud-Native Backend: Microservices on cloud platforms (Kubernetes, Kafka, BigQuery) for massive data handling and resilience.
-
-Full Multi-Modal Fusion: Sophisticated models combining acoustic, environmental, and satellite data.
-
-Causal Inference & Advanced Predictive Analytics: Models for forecasting and understanding cause-effect relationships.
-
-Human-in-the-Loop Validation: Expert feedback loops for continuous model improvement.
-
-Comprehensive Security & Ethics: End-to-end encryption, IAM, data anonymization, and ethical AI governance.
-
-This prototype demonstrates the vision and technical capabilities for an impactful real-world BAEHM system.
+- React 18
+- TensorFlow.js
+- THREE.js
+- Tailwind CSS
+- Speech Commands model (loaded via CDN) 
